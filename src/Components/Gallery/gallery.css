@@ -1,0 +1,157 @@
+:root {
+  --SecondaryColor: antiquewhite;
+  --textColor: rgb(54, 53, 61);
+}
+
+.preview_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 5rem 0;
+  gap: 5rem;
+  margin: 0 auto;
+}
+.preview_gallery .imageContainer_gallery {
+  display: block;
+  position: relative;
+  width: 35vw;
+  height: auto;
+  cursor: pointer;
+}
+.preview_gallery .imageContainer_gallery img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.preview_gallery .imageContainer_gallery .overlay_gallery {
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.preview_gallery .imageContainer_gallery .overlay_gallery p {
+  font-size: 1.25rem;
+  color: rgb(72, 72, 72);
+}
+.preview_gallery .imageContainer_gallery .overlay_gallery p:hover {
+  color: rgb(115, 23, 127);
+}
+.preview_gallery .imageContainer_gallery .show {
+  display: flex;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.modal .modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modalContent img {
+  max-width: 85vw;
+  max-height: 85vh;
+  margin: 2rem auto 1rem auto;
+  z-index: 101;
+  cursor: zoom-in;
+}
+.modal .modalContent .description_modal {
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+}
+.modal .modalContent .close, .modal .modalContent .prev, .modal .modalContent .next {
+  border: none;
+  background: none;
+  z-index: 102;
+}
+.modal .modalContent .close {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  color: rgb(112, 112, 112);
+  font-size: 3rem;
+  font-weight: 525;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.modal .modalContent .close:hover {
+  color: rgb(56, 34, 68);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.modal .modalContent .prev, .modal .modalContent .next {
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 1rem;
+  color: rgb(112, 112, 112);
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+.modal .modalContent .prev:hover, .modal .modalContent .next:hover {
+  color: rgb(56, 34, 68);
+  transform: scale(1.25);
+  transition: 0.5s;
+}
+.modal .modalContent .prev {
+  left: 0;
+}
+.modal .modalContent .next {
+  right: 0;
+  padding-right: 2rem;
+}
+
+@media screen and (min-width: 1240px) {
+  .preview_gallery {
+    gap: 3rem;
+  }
+  .preview_gallery .imageContainer_gallery {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 960px) {
+  .preview_gallery {
+    padding: 1rem 0 4rem 0;
+    gap: 3rem;
+  }
+  .preview_gallery .imageContainer_gallery {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 640px) {
+  .preview_gallery {
+    padding: 1rem 0 3rem 0;
+    gap: 3rem;
+  }
+  .preview_gallery .imageContainer_gallery {
+    width: 75vw;
+  }
+  .modal .modalContent .close, .modal .modalContent .prev, .modal .modalContent .next {
+    color: rgba(172, 172, 172, 0.8);
+  }
+}/*# sourceMappingURL=gallery.css.map */

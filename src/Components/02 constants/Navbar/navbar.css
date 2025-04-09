@@ -1,0 +1,110 @@
+:root {
+  --SecondaryColor: antiquewhite;
+  --textColor: rgb(54, 53, 61);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4rem;
+}
+.header .title {
+  font-size: 1.5rem;
+  transition: 1s;
+  padding-bottom: 1rem;
+}
+.header .navList .navItem {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.header .navList .navItem .navLink {
+  color: var(--textColor);
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header .navList .navItem .navLink:hover {
+  color: rgb(212, 64, 212);
+  transition: 1s;
+}
+.header .navList .navItem .navLink:active {
+  font-weight: bold;
+}
+.header .navList .rightBar {
+  border-right: 1px solid var(--textColor);
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    height: 25vh;
+    padding-top: 5rem;
+  }
+  .header .title {
+    font-size: 1.35rem;
+  }
+  .header .navBar {
+    position: absolute;
+    height: -moz-max-content;
+    height: max-content;
+    width: 75%;
+    border-radius: 1rem;
+    top: -25rem;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 3px 10px rgba(2, 15, 29, 0.9);
+    transition: 0.2s ease-in-out;
+  }
+  .header .navBar .navList {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+  }
+  .header .navBar .navList .navItem {
+    padding: 1rem 0;
+  }
+  .header .navBar .navList .navItem .navLink {
+    color: var(--textColor);
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    transition: 0.5s ease;
+  }
+  .header .navBar .navList .navItem .navLink:hover {
+    color: black;
+    background-color: lightgray;
+    transition: 0.5s ease;
+  }
+  .header .navBar .navList .rightBar {
+    border-right: none;
+  }
+  .header .navBar .closeNavBar {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .header .activeNavBar {
+    top: 14rem;
+    background: rgba(255, 255, 255, 0.9);
+    width: 75vw;
+  }
+  .header .toggleNavBar .icon {
+    font-size: 2.75rem;
+    color: var(--textColor);
+  }
+  .header .toggleNavBar:hover .icon {
+    color: purple;
+    transition: 0.5s;
+  }
+}
+@media screen and (min-width: 641px) {
+  .toggleNavBar, .closeNavBar {
+    display: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */
