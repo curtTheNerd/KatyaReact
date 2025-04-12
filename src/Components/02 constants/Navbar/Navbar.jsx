@@ -4,7 +4,7 @@ import { useState } from 'react';
 import './navbar.css';
 
 import { IoCloseCircle } from "react-icons/io5";
-import { MdMenuOpen } from "react-icons/md";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
                 
                 <div onClick={showNav} className="toggleNavBar">
-                    <MdMenuOpen className='icon' />
+                    <HiMenuAlt3 className='icon' />
                 </div>
             </header>
         </div>

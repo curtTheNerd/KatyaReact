@@ -16,16 +16,19 @@
   display: block;
   position: relative;
   width: 35vw;
-  height: auto;
+  height: 45vh;
+  overflow: hidden;
   cursor: pointer;
 }
 .preview_gallery .imageContainer_gallery img {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 .preview_gallery .imageContainer_gallery .overlay_gallery {
   display: none;
@@ -72,12 +75,27 @@
   max-height: 85vh;
   margin: 2rem auto 1rem auto;
   z-index: 101;
+  transition: 0.5s;
   cursor: zoom-in;
+}
+.modal .modalContent .magnified {
+  scale: 2;
+  transition: 0.5s;
+  cursor: grab;
 }
 .modal .modalContent .description_modal {
   display: flex;
   flex-direction: column;
   align-self: auto;
+}
+.modal .modalContent .description_modal_magnified {
+  position: absolute;
+  text-shadow: 1px 1px 2px white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 102;
 }
 .modal .modalContent .close, .modal .modalContent .prev, .modal .modalContent .next {
   border: none;

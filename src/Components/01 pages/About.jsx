@@ -40,7 +40,9 @@ const About = () => {
                     I seek to disrupt the linear spatial perspective of the photograph, so I deliberately destroy the relationship between the 
                     foreground and background, mixing them into a single pictorial mass of slimy paint.</p>
                 </div>
-            </div>    
+            </div>
+
+            <div className="content_spacer"></div>
 
             <div className='aboutContentFlex'>
                 <div className='item' >
@@ -54,11 +56,7 @@ const About = () => {
                     <img src={img3} alt="katyaGranova" />
                 </div>
 
-                <div className="content_spacer"></div>
             </div>
-
-            <div className="content_spacer"></div>
-
         </div>
     )
 }

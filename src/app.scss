@@ -40,6 +40,14 @@ li {
     margin: 0 auto;
 }
 
+.title {
+    padding: 5rem auto 3rem auto;
+}
+
+.content_spacer {
+    padding: 2rem;
+}
+
 .icon {
     font-size: 2.2rem;
     color: var(--textColor);
@@ -77,9 +85,8 @@ li {
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 10vw));
     grid-gap: 0.5rem;
-    margin: 5rem auto;
+    padding-top: 5rem;
     
-
     .item {
         max-width: 100%;
         max-height: 100%;
@@ -94,41 +101,94 @@ li {
     .item1 {
         grid-area: 1/1/6/4;
     }
-
     .item2 {
         grid-area: 1/4/3/6;
     }
-
     .item3 {
         grid-area: 1/6/4/11;
     }
-
     .item4 {
         grid-area: 3/4/6/6;
     }
-
     .item5 {
         grid-area: 4/6/6/8;
     }
-
     .item6 {
         grid-area: 4/8/8/11;
     }
-
     .item7 {
         grid-area: 6/1/8/5;
     }
-    
     .item8 {
         grid-area: 6/5/11/8;
     }
-
     .item9 {
         grid-area: 8/1/11/5;
     }
-
     .item10 {
         grid-area: 8/8/11/11;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 10vw));
+        grid-gap: 0.5rem;
+        margin: 2rem auto;
+        padding-top: 5rem;
+        
+        .item {
+            max-width: 100%;
+            max-height: 100%;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        // linke reihe
+        .item6 {
+            grid-area: 1/1/7/6;
+        }
+        .item1 {
+            grid-area: 7/1/11/6;
+        }
+        .item3 {
+            grid-area: 11/1/18/6;
+        }
+        // rechte reihe
+        .item9 {
+            grid-area: 1/6/4/10;
+        }
+        .item8 {
+            grid-area: 4/6/9/10;
+        }
+        .item4 {
+            grid-area: 9/6/15/10;
+        }
+        .item7 {
+            grid-area: 15/6/18/10;
+        }
+        
+        
+        
+        .item2 {
+            display: none;
+        }
+        
+        .item5 {
+            grid-area: 4/6/6/8;
+            display: none;
+        }
+        
+        
+        
+        .item10 {
+            grid-area: 8/8/11/11;
+            display: none;
+        }
     }
 }
 
@@ -143,18 +203,21 @@ li {
     margin: 0 auto;
 
     .imageContainer_work {
+        display: block;
         position: relative;
-        width: 35vw;
-        height: auto;
+        width: 35vw;     //
+        height: 45vh;    //
+        overflow: hidden;
+        cursor: pointer;
 
         img {
-            display: flex;
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
             width: 100%;
-            height: auto;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
         }
 
         .overlay_work {
@@ -212,14 +275,10 @@ li {
 
 
 .about {
-    .title {
-        margin: 5rem auto 3rem auto;
-    }
-
     .aboutContentGrid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 3rem;
+        gap: 1rem;
 
         .item {
             position: relative;
@@ -229,8 +288,8 @@ li {
 
             p {
                 font-size: 1.1rem;
-                line-height: 1.4;
-                padding: 4rem;
+                line-height: 1.5;
+                padding: 3rem;
             }
             
             img {
@@ -240,8 +299,8 @@ li {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;  
-                border-radius: 4rem;
-                padding: 3rem;  
+                border-radius: 3rem;
+                padding: 2rem;  
             }
         }
     }
@@ -258,17 +317,17 @@ li {
 
             p {
                 font-size: 1.1rem;
-                line-height: 1.4;
+                line-height: 1.5;
                 text-align: center;
-                padding: 4rem;
+                padding: 2rem;
             }
             
             img {
                 position: relative;
                 top: 0;
                 left: 0;
-                width: 75vw;
-                height: auto;
+                width: 100%;
+                height: 100%;
                 object-fit: cover; 
                 border-radius: 1rem;   
             }
@@ -276,14 +335,14 @@ li {
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
     .about {
         .aboutContentGrid{
-            gap: 1rem;
+            gap: 2rem;
 
             .item {
                 p {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     padding: 1rem;
                 }
                 
@@ -297,20 +356,16 @@ li {
         .aboutContentFlex{
             .item {
                 p {
-                    font-size: 1rem;
-                    padding: 2rem;
+                    font-size: 1.1rem;
+                    padding: 1rem;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
     .about {
-        .title {
-            margin: 4rem auto 0 auto;
-        }
-    
         .aboutContentGrid{
             display: flex;
             flex-direction: column;
@@ -319,7 +374,7 @@ li {
                 p {
                     font-size: 1.1rem;
                     text-align: center;
-                    padding: 2rem;
+                    padding: 1rem;
                 }
                 
                 img { 
@@ -348,16 +403,54 @@ li {
 .cv {
     width: 80%;
     margin: 0 auto;
-    line-height: 1.42857143;
+    line-height: 1.5;
+}
 
-    .link{
+@media screen and (max-width: 600px) {
+    .cv {
+        width: 90%;
+    }
+}
 
-        &:hover {
-            cursor: pointer;
+.media {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+
+    .mediaGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 4rem;
+
+        .gridItem {
+            p {
+                font-size: 1.1rem;
+                line-height: 1.5;
+            }
         }
 
-        &:after {
-            color: var(--textColor);
+
+        .nr1 {
+            grid-area: 1/1/2/2;
         }
+        .nr2 {
+            grid-area: 2/1/3/2;
+        }
+        .nr3 {
+            grid-area: 1/2/2/3;
+        }
+        .nr4 {
+            grid-area: 3/1/4/2;
+        }
+        .nr5 {
+            grid-area: 2/2/4/3;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .media {
+        width: 90%;
     }
 }

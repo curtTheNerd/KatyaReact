@@ -11,7 +11,7 @@ const Work = () => {
 
     return (
         <div>
-            <h2 className="albumTitle"></h2>
+            <h2 className="title">Work</h2>
             
             <div className="container flex preview_work">
                 {images.map(image => (

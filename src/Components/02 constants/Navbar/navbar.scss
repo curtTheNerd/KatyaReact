@@ -1,7 +1,3 @@
-:root {
-    --SecondaryColor: antiquewhite;
-    --textColor: rgb(54, 53, 61);
-}
 
 .header {   
     display: flex;
@@ -12,9 +8,9 @@
     padding-top: 4rem;
 
     .title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         transition: 1s;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 
     .navList {
@@ -24,8 +20,8 @@
 
             .navLink {
                 color: var(--textColor);
-                font-size: 1.2rem;
-                letter-spacing: 0.1rem;
+                font-size: 1.35rem;
+                letter-spacing: 0.2rem;
                 cursor: pointer;
                 transition: 0.5s;
 
@@ -58,15 +54,15 @@
         .navBar {
             position: absolute;
             height: max-content;
-            width: 75%;
-            border-radius: 1rem;
+            width: 80%;
+            border-radius: 1.5rem;
             top: -25rem;
             left: 50%;
             padding: 1rem;
             transform: translate(-50%);
             z-index: 2000;
-            box-shadow: 0 3px 10px rgba(2, 15, 29, 0.9);
-            transition: 0.2s ease-in-out;
+            box-shadow: 3px 3px 10px rgba(2, 15, 29, 0.9);
+            transition: 0.25s ease-in-out;
 
             .navList {
                 flex-direction: column;
@@ -75,11 +71,11 @@
                 padding: 1rem;
     
                 .navItem {
-                    padding: 1rem 0;
+                    padding: 1.25rem;
     
                     .navLink {
                         color: var(--textColor);
-                        font-size: 1.2rem;
+                        font-size: 1.4rem;
                         border-radius: 1.5rem;
                         padding: 0.75rem 2rem 0.75rem 2rem;
                         transition: 0.5s ease;
@@ -123,7 +119,7 @@
     }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 640px) {
     .toggleNavBar, .closeNavBar {
         display: none;
     }  

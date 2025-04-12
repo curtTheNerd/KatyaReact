@@ -11,10 +11,10 @@ const Footer = () => {
             <div className="bar"></div>
             
             <div className='iconDiv flex'>
-                <a href="https://www.instagram.com/katyagranova/"  target='_blank'>
+                <a href="https://www.instagram.com/katyagranova/"  target='_blank' rel='noreferrer nofollow'>
                     <FaInstagram className='instagram icon' />
                 </a>
-                <a href="https://www.youtube.com/@katyagranova9832"  target='_blank'>
+                <a href="https://www.youtube.com/@katyagranova9832"  target='_blank' rel='noreferrer nofollow'>
                     <SlSocialYoutube className='youtube icon' />
                 </a>
             </div>

@@ -38,6 +38,14 @@ li {
   margin: 0 auto;
 }
 
+.title {
+  padding: 5rem auto 3rem auto;
+}
+
+.content_spacer {
+  padding: 2rem;
+}
+
 .icon {
   font-size: 2.2rem;
   color: var(--textColor);
@@ -75,7 +83,7 @@ li {
   display: grid;
   grid-template-columns: repeat(10, minmax(0, 10vw));
   grid-gap: 0.5rem;
-  margin: 5rem auto;
+  padding-top: 5rem;
 }
 .home .item {
   max-width: 100%;
@@ -118,6 +126,57 @@ li {
   grid-area: 8/8/11/11;
 }
 
+@media screen and (max-width: 800px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 10vw));
+    grid-gap: 0.5rem;
+    margin: 2rem auto;
+    padding-top: 5rem;
+  }
+  .home .item {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .home .item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .home .item6 {
+    grid-area: 1/1/7/6;
+  }
+  .home .item1 {
+    grid-area: 7/1/11/6;
+  }
+  .home .item3 {
+    grid-area: 11/1/18/6;
+  }
+  .home .item9 {
+    grid-area: 1/6/4/10;
+  }
+  .home .item8 {
+    grid-area: 4/6/9/10;
+  }
+  .home .item4 {
+    grid-area: 9/6/15/10;
+  }
+  .home .item7 {
+    grid-area: 15/6/18/10;
+  }
+  .home .item2 {
+    display: none;
+  }
+  .home .item5 {
+    grid-area: 4/6/6/8;
+    display: none;
+  }
+  .home .item10 {
+    grid-area: 8/8/11/11;
+    display: none;
+  }
+}
 .preview_work {
   display: flex;
   flex-wrap: wrap;
@@ -128,18 +187,22 @@ li {
   margin: 0 auto;
 }
 .preview_work .imageContainer_work {
+  display: block;
   position: relative;
   width: 35vw;
-  height: auto;
+  height: 45vh;
+  overflow: hidden;
+  cursor: pointer;
 }
 .preview_work .imageContainer_work img {
-  display: flex;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  height: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 .preview_work .imageContainer_work .overlay_work {
   display: flex;
@@ -181,13 +244,10 @@ li {
     width: 80vw;
   }
 }
-.about .title {
-  margin: 5rem auto 3rem auto;
-}
 .about .aboutContentGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 1rem;
 }
 .about .aboutContentGrid .item {
   position: relative;
@@ -197,8 +257,8 @@ li {
 }
 .about .aboutContentGrid .item p {
   font-size: 1.1rem;
-  line-height: 1.4;
-  padding: 4rem;
+  line-height: 1.5;
+  padding: 3rem;
 }
 .about .aboutContentGrid .item img {
   position: relative;
@@ -208,8 +268,8 @@ li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 4rem;
-  padding: 3rem;
+  border-radius: 3rem;
+  padding: 2rem;
 }
 .about .aboutContentFlex {
   display: flex;
@@ -223,27 +283,27 @@ li {
 }
 .about .aboutContentFlex .item p {
   font-size: 1.1rem;
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: center;
-  padding: 4rem;
+  padding: 2rem;
 }
 .about .aboutContentFlex .item img {
   position: relative;
   top: 0;
   left: 0;
-  width: 75vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1000px) {
   .about .aboutContentGrid {
-    gap: 1rem;
+    gap: 2rem;
   }
   .about .aboutContentGrid .item p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 1rem;
   }
   .about .aboutContentGrid .item img {
@@ -251,14 +311,11 @@ li {
     padding: 1rem;
   }
   .about .aboutContentFlex .item p {
-    font-size: 1rem;
-    padding: 2rem;
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 }
-@media screen and (max-width: 700px) {
-  .about .title {
-    margin: 4rem auto 0 auto;
-  }
+@media screen and (max-width: 800px) {
   .about .aboutContentGrid {
     display: flex;
     flex-direction: column;
@@ -266,7 +323,7 @@ li {
   .about .aboutContentGrid .item p {
     font-size: 1.1rem;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
   }
   .about .aboutContentGrid .item img {
     border-radius: 2rem;
@@ -283,11 +340,47 @@ li {
 .cv {
   width: 80%;
   margin: 0 auto;
-  line-height: 1.42857143;
+  line-height: 1.5;
 }
-.cv .link:hover {
-  cursor: pointer;
+
+@media screen and (max-width: 600px) {
+  .cv {
+    width: 90%;
+  }
 }
-.cv .link:after {
-  color: var(--textColor);
+.media {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.media .mediaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 4rem;
+}
+.media .mediaGrid .gridItem p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.media .mediaGrid .nr1 {
+  grid-area: 1/1/2/2;
+}
+.media .mediaGrid .nr2 {
+  grid-area: 2/1/3/2;
+}
+.media .mediaGrid .nr3 {
+  grid-area: 1/2/2/3;
+}
+.media .mediaGrid .nr4 {
+  grid-area: 3/1/4/2;
+}
+.media .mediaGrid .nr5 {
+  grid-area: 2/2/4/3;
+}
+
+@media screen and (max-width: 600px) {
+  .media {
+    width: 90%;
+  }
 }/*# sourceMappingURL=app.css.map */
