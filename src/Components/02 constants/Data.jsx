@@ -9,18 +9,18 @@ import love8 from '../../Assets/A song of unrequited love for Britain, 2024/DSC_
         
 import family1 from '../../Assets/Family archive 2019-2025/Chess_Players 2, 120x150cm, oil on canvas, 2024.jpg'
 import family2 from '../../Assets/Family archive 2019-2025/Maria and her sisters, 195x130cm, oil on canvas, 2020.jpg.jpg'
-import family3 from "../../Assets/Family archive 2019-2025/New year's party from the 70s, 140x150cm, oil on Van Dyke photographic transfer on canvas, 2023.jpg"
+import family3 from "../../Assets/Family archive 2019-2025/NewYearsPartyFromThe70s,140x150,OilOnCanvasVanDyke,2023.jpg"
 import family4 from '../../Assets/Family archive 2019-2025/Pediatric surgery 2, oil on canvas, 200x150cm, 2019.jpg'
 import family5 from '../../Assets/Family archive 2019-2025/Ukrainian dance, 90x140cm, oil on canvas, 2024.jpg'
 
 import police1 from '../../Assets/Atelier by the Police Bridge, 2020/Komissarjevskaya playing Nora, lr 200x145cm, oil on canvas .jpg'
 import police2 from '../../Assets/Atelier by the Police Bridge, 2020/Komissarjevskaya theatre actors posing in costumes_150x200cm_oil on canvas_2020 — копия 2.jpg'
-import police3 from '../../Assets/Atelier by the Police Bridge, 2020/(In Collection)Mendeleev and his colleagues before the expedition, 210x170, oil on canvas, 2020 (1).jpg'
+import police3 from '../../Assets/Atelier by the Police Bridge, 2020/MendeleevAndHisColleaguesBeforeTheExhibition210x170,OilOnCanvas,2020 .jpg'
 
-import past22_25_1 from "../../Assets/Found past 2022-2025/Edik's friends lr electric light oil on canvas l.jpg"
+import past22_25_1 from "../../Assets/Found past 2022-2025/EdiksFriendslrElectricLightOilOnCanvas.jpg"
 import past22_25_2 from '../../Assets/Found past 2022-2025/5_Granova_Surgeons_260x200cm_oil on canvas.jpg'
 import past22_25_3 from '../../Assets/Found past 2022-2025/men resting, 220x180cm, oil on canvas, 2022 — копия.jpg'
-import past22_25_4 from "../../Assets/Found past 2022-2025/Mum's picnic from 80s, 50x60cm, oil on canvas, 2024 x.jpg"
+import past22_25_4 from "../../Assets/Found past 2022-2025/MumsPicnicFrom80s50x60,OilOnCanvas,2024.jpg"
 import past22_25_5 from '../../Assets/Found past 2022-2025/Neptunes day 170x200cm.jpg'
 import past22_25_6 from '../../Assets/Found past 2022-2025/posing family_from 20s, 2024 180x210cm.jpg'
 import past22_25_7 from '../../Assets/Found past 2022-2025/Saying goodbye, 80x80cm, oil on canvas, 2023 — копия.jpg'
@@ -33,9 +33,9 @@ import past19_22_1 from '../../Assets/Found past 2019-2022/forest camping 200 21
 import past19_22_2 from '../../Assets/Found past 2019-2022/village party, 240x200, oil on canvas, 2021.jpg'
 import past19_22_3 from '../../Assets/Found past 2019-2022/Woman, her daughters and a doll, 145X210CM, oil on canvas, 2021.jpg'
 
-import hamlet1 from '../../Assets/Hamlet/Feast scene -Oil on cancas-230x180cm-2021.jpg'
-import hamlet2 from '../../Assets/Hamlet/Gertrude scene -Oil on canvas-180x160cm-2021.jpg'
-import hamlet3 from '../../Assets/Hamlet/Scull scene -Oil on canvas-180x160cm-2021.jpg'
+import hamlet1 from '../../Assets/Hamlet/FeastScene,230x180,2021.jpg'
+import hamlet2 from '../../Assets/Hamlet/GertrudeScene,180x160,2021.jpg'
+import hamlet3 from '../../Assets/Hamlet/ScullScene,180x160,2021.jpg'
 import hamlet4 from '../../Assets/Hamlet/Hamlet (Act 1. Scene 5) 1 interior.jpeg'
 import hamlet5 from '../../Assets/Hamlet/Hamlet (Act 1. Scene 5) 2interior.jpg'
 
@@ -170,19 +170,19 @@ export const policeBridge = [
 
 export const foundPast_22_25 = [
     {
-        id: `Edik's friends lr electric light`,
-        src: past22_25_1,
+        id: `Granova surgeons`,
+        src: past22_25_2,
         method: 'Oil on canvas',
-        size: '',
+        size: '260 x 200cm',
         date: '',
         title: 'Found Past 2022 - 2025',
         link: '/FoundPast_22-25',
     },
     {
-        id: `Granova surgeons`,
-        src: past22_25_2,
+        id: `Edik's friends lr electric light`,
+        src: past22_25_1,
         method: 'Oil on canvas',
-        size: '260 x 200cm',
+        size: '',
         date: '',
     },
     {

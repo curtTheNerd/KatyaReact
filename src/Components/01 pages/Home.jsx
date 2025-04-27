@@ -15,16 +15,16 @@ const Home = () => {
 
     return (
         <div className='container home'>
-            <div className="item item1"><img src={img1} alt="" /></div>
-            <div className="item item2"><img src={img8} alt="" /></div>
-            <div className="item item3"><img src={img7} alt="" /></div>
-            <div className="item item4"><img src={img10} alt="" /></div>
-            <div className="item item5"><img src={img3} alt="" /></div>
-            <div className="item item6"><img src={img5} alt="" /></div>
-            <div className="item item7"><img src={img6} alt="" /></div>
-            <div className="item item8"><img src={img2} alt="" /></div>
-            <div className="item item9"><img src={img4} alt="" /></div>
-            <div className="item item10"><img src={img9} alt="" /></div>
+            <div className="item item1"><img src={img1} alt="samplePic" /></div>
+            <div className="item item2"><img src={img8} alt="samplePic" /></div>
+            <div className="item item3"><img src={img7} alt="samplePic" /></div>
+            <div className="item item4"><img src={img10} alt="samplePic" /></div>
+            <div className="item item5"><img src={img3} alt="samplePic" /></div>
+            <div className="item item6"><img src={img5} alt="samplePic" /></div>
+            <div className="item item7"><img src={img6} alt="samplePic" /></div>
+            <div className="item item8"><img src={img2} alt="samplePic" /></div>
+            <div className="item item9"><img src={img4} alt="samplePic" /></div>
+            <div className="item item10"><img src={img9} alt="samplePic" /></div>
         </div>
     )
 }

@@ -17,7 +17,7 @@ const Work = () => {
                 {images.map(image => (
                     <Link to={image.link} key={image.id} onClick={handleScroll}>
                         <div className='imageContainer_work'>
-                            <img src={image.src} alt={image.id} />
+                            <img src={image.src} alt={image.id} loading='lazy' />
                             <div className='overlay_work'>
                                 <p>{image.title}</p>    
                             </div>

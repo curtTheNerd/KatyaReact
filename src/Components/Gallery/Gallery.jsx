@@ -7,7 +7,7 @@ const Gallery = ({ images = [] }) => {
     const [showModal, setShowModal] = useState(false);
     //const[modalZoom, setModalZoom] = useState(false);
 
-    const handleMouseOver = (id) => {
+    const handleMouseOver = (id) => {   
         setShowOverlay(id);
     };
 
@@ -61,6 +61,7 @@ const Gallery = ({ images = [] }) => {
                         <img
                             src={image.src}
                             alt={image.id}
+                            loading='lazy'
                             onClick={() => openModal(image)}
                         />
                         <div
@@ -87,7 +88,7 @@ const Gallery = ({ images = [] }) => {
                         <div className="description_modal">
                             <p>{selectedImage.id}</p>
                             <p>
-                                {selectedImage.method}, {selectedImage.size}
+                                {selectedImage.method} {selectedImage.size}
                             </p>
                             <p>{selectedImage.date}</p>
                         </div>

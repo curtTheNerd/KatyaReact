@@ -14,12 +14,13 @@ Previous steps:
 
 4. Created Gallery (actually my favorite part while writing this code) with popup-like modal view to show images cut down rectangular in the preview and as full size inside modal perspective.
 
+5. CSS cleaned up and setting app ready for early deploying to look for bugs being live.
+
 
 
 Next steps:
 
-1. Correcting and finishing all SCSS parts for early deployment as well as changing the displayed images inside the Home.jsx component. Images there are from the last version and don't yet represent the current archive (most urgent!).
-
+1. done
 2. Implement better reusing of components. Currently React is not used optimized because of too much hardcoding inside the pages components.
 
 3. Implement server-side routing as soon as I learned how to do this.
