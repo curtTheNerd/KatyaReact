@@ -32,8 +32,7 @@ const Navbar = () => {
                 
                 <div className={active}>
                     <ul className="navList flex">
-                        <li className="navItem rightBar"><Link to="/" className='navLink' onClick={handleClick}>Home</Link></li>
-                        <li className="navItem rightBar"><Link to="/work" className='navLink' onClick={handleClick}>Work</Link></li>
+                        <li className="navItem rightBar"><Link to="/" className='navLink' onClick={handleClick}>Work</Link></li>
                         <li className="navItem rightBar"><Link to="/about" className='navLink' onClick={handleClick}>About</Link></li>
                         <li className="navItem rightBar"><Link to="/cv" className='navLink' onClick={handleClick}>CV</Link></li>
                         <li className="navItem"><Link to="/media" className='navLink' onClick={handleClick}>Media</Link></li>

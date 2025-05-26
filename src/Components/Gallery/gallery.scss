@@ -59,21 +59,24 @@
 }
 
 .modal {
-    display: block;
+    display: flex;
+    justify-content: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
+    margin: 0 auto;
 
     .modalContent {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        
         
         img {
             max-width: 85vw;
@@ -91,9 +94,7 @@
         }
 
         .description_modal {
-            display: flex;
-            flex-direction: column;
-            align-self: auto;
+            padding-left: 1.5rem;
         }
 
         .description_modal_magnified {
@@ -117,7 +118,7 @@
             top: 2rem;
             right: 2.5rem;
             color: rgb(112, 112, 112);
-            font-size: 3rem;
+            font-size: 3.75rem;
             font-weight: 525;
             cursor: pointer;
             transition: 0.5s;
@@ -136,7 +137,7 @@
             padding: 1rem;
             color: rgb(112, 112, 112);
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 2.2rem;
             cursor: pointer;
             transition: 0.5s;
             -webkit-user-select: none;
@@ -155,7 +156,7 @@
         
         .next {
             right: 0;
-            padding-right: 2rem;
+            padding-right: 1rem;
         }
     }
 }

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f5fb626b.css",
-    "main.js": "/static/js/main.03c6db88.js",
+    "main.js": "/static/js/main.d6a05982.js",
     "static/media/12 Ediks_friends_lrr.jpeg": "/static/media/12 Ediks_friends_lrr.e2f32add79ef271c1751.jpeg",
     "static/media/11 3_Going_to_swim_1961_600_400mm_oil_on_canvas.jpeg": "/static/media/11 3_Going_to_swim_1961_600_400mm_oil_on_canvas.8c9d75cb7161d76d4879.jpeg",
     "static/media/07 Katya_Granova_Zinoviys_kids130x195cm_2020.jpg": "/static/media/07 Katya_Granova_Zinoviys_kids130x195cm_2020.604e88c788cdd19910dd.jpg",
@@ -52,10 +52,10 @@
     "static/media/10 Mum_and_Nietzsche_on_the_party_30x40.jpg": "/static/media/10 Mum_and_Nietzsche_on_the_party_30x40.450b055658e7726204cd.jpg",
     "index.html": "/index.html",
     "main.f5fb626b.css.map": "/static/css/main.f5fb626b.css.map",
-    "main.03c6db88.js.map": "/static/js/main.03c6db88.js.map"
+    "main.d6a05982.js.map": "/static/js/main.d6a05982.js.map"
   },
   "entrypoints": [
     "static/css/main.f5fb626b.css",
-    "static/js/main.03c6db88.js"
+    "static/js/main.d6a05982.js"
   ]
 }

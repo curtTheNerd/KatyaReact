@@ -8,6 +8,7 @@ const Media = () => {
             <h2 className="title">Media</h2>
             
             <div className='mediaGrid'>
+                {/*
                 <div className='gridItem nr1'>
                     <p><strong>Artist Talks</strong></p><br />
                     <p><a href="https://www.youtube.com/watch?v=2y8ptuYujrU&t=48s" className='link' target='blank' rel='noreferrer nofollow'>2025 The Third Room, Leipzig, 44:48</a></p>
@@ -18,8 +19,9 @@ const Media = () => {
                     <p><a href="https://www.youtube.com/watch?v=G2Sz40xB3-8&t=18s" className='link' target='blank' rel='noreferrer nofollow'>2021 Фонд Сфера, 24:48</a></p>
                     <p><a href="https://www.youtube.com/watch?v=F0r-t7uIBTE" className='link' target='blank' rel='noreferrer nofollow'>2019 Artist talk, 20:28</a></p>
                 </div>
+                */}
 
-                <div className="gridItem nr2">
+                <div className="gridItem">
                     <p><strong>Articles</strong></p><br />
                     <p><a href="http://westside.pilotenkueche.net/katya-granova-temporal-echoes/" className="link" target='_blank' rel='noreferrer nofollow'>2024 Pilotenküche</a></p>
                     <p><a href="https://odraplatform.com/voices_from_a_suitcase" className="link" target='_blank' rel='noreferrer nofollow'>2023 Odra</a></p>
@@ -38,7 +40,7 @@ const Media = () => {
                     <p><a href="https://www.mk.ru/culture/2018/07/17/sovremennye-khudozhniki-dobralis-do-baykonura.html" className="link" target='_blank' rel='noreferrer nofollow'>2018 MK</a></p>
                 </div>
 
-                <div className="gridItem nr3">
+                <div className="gridItem">
                     <p><strong>Interviews</strong></p><br />
                     <p><a href="https://zimamagazine.com/2024/11/sozdat-situaciju-v-kotoroj-proizojdet-zhivopis-bolshoe-intervju-kati-granovoj/" className="link" target='_blank' rel='noreferrer nofollow'>2024 Zima Magazine</a></p>
                     <p><a href="https://lartcultures.com/blog/f/katya-granova" className="link" target='_blank' rel='noreferrer nofollow'>2024 L'Art Cultures</a></p>
@@ -47,8 +49,9 @@ const Media = () => {
                     <p><a href="https://www.supervizuelna.com/katya-granova-communal-paradise-lost/" className="link" target='_blank' rel='noreferrer nofollow'>2016 Supervisuelna</a></p>
                 </div>
 
-                <div className="gritItem nr4">
+                <div className="gridItem">
                     <p><strong>Article Mentions</strong></p><br />
+                    <p><a href="https://www.sobaka.ru/entertainment/art/86297" className="link" target='_blank' rel='noreferrer nofollow'>2025 Sobaka</a></p>
                     <p><a href="https://www.pushkinhouse.org/whats-on/events/2335" className="link" target='_blank' rel='noreferrer nofollow'>2024 Pushkin House</a></p>
                     <p><a href="https://www.womenunitedartmovement.com/product-page/women-united-art-magazine-special-edition-2024" className="link" target='_blank' rel='noreferrer nofollow'>2024 Women United Art Movement</a></p>
                     <p><a href="https://womeninartfair.com/wp-content/uploads/2024/10/WIAF-catalogue-2024-1.pdf" className="link" target='_blank' rel='noreferrer nofollow'>2024 Women in Art Fair Catalogue</a></p>
@@ -56,13 +59,11 @@ const Media = () => {
                     <p><a href="https://www.islingtongazette.co.uk/news/21221042.paintings-sculpture-installations-harvested-display/" className="link" target='_blank' rel='noreferrer nofollow'>2021 Islington Gazette</a></p>
                     <p><a href="https://zimamagazine.com/2021/04/kak-pereehat-v-velikobritaniju-esli-ty-frilanser-istorii-teh-kto-poluchil-vizu-global-talent/" className="link" target='_blank' rel='noreferrer nofollow'>2021 Zima Magazine</a></p>
                     <p><a href="https://magazineart.art/things-as-art/bezothodnoe-tvorchestvo-sovremennye-hudozhniki-i-ih-jeko-principy/" className="link" target='_blank' rel='noreferrer nofollow'>2020 Magazine Art</a></p>
-                    <p><a href="https://www.sobaka.ru/entertainment/art/86297" className="link" target='_blank' rel='noreferrer nofollow'>Sobaka</a></p>
-                    <p><a href="https://news.artnet.com/art-world-archives/moscow-art-1494643" className="link" target='_blank' rel='noreferrer nofollow'>Artnet</a></p>
-                    <p><a href="https://paperpaper.ru/posetiteli-i-uchastniki-yarmarki-sovre/" className="link" target='_blank' rel='noreferrer nofollow'>Paper paper</a></p>
-                    <p><a href="https://contraltopeople.ru/publicart" className="link" target='_blank' rel='noreferrer nofollow'>Contralto people</a></p>
+                    <p><a href="https://news.artnet.com/art-world-archives/moscow-art-1494643" className="link" target='_blank' rel='noreferrer nofollow'>2019 Artnet</a></p>
+                    <p><a href="https://paperpaper.ru/posetiteli-i-uchastniki-yarmarki-sovre/" className="link" target='_blank' rel='noreferrer nofollow'>2018 Paper paper</a></p>
                 </div>
 
-                <div className="gridItem nr5">
+                <div className="gridItem">
                     <p><strong>Announcements</strong></p><br />
                     <p><a href="https://londoncult.co.uk/pesnya-o-bezotvetnoy-lyubvi-k-britanii-vystavka-kati-granovoy/" className="link" target='_blank' rel='noreferrer nofollow'>2024 London Cult</a></p>
                     <p><a href="https://www.rupturexibit.com/events/katya-granova-in-conversation" className="link" target='_blank' rel='noreferrer nofollow'>2024 Rupture Xibit</a></p>

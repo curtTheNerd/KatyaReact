@@ -87,9 +87,9 @@ const Gallery = ({ images = [] }) => {
                         />
                         <div className="description_modal">
                             <p>{selectedImage.id}</p>
-                            <p>
-                                {selectedImage.method} {selectedImage.size}
-                            </p>
+                            <p>{selectedImage.sub}</p>
+                            <p>{selectedImage.method}  {selectedImage.size}</p>
+                            <p>{selectedImage.method2}</p>
                             <p>{selectedImage.date}</p>
                         </div>
                         <button className="close" onClick={closeModal}>

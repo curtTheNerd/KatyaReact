@@ -4,7 +4,7 @@ import './app.css';
 
 import Navbar from "./Components/02 constants/Navbar/Navbar";
 import Footer from "./Components/02 constants/Footer/Footer";
-import Home from "./Components/01 pages/Home";
+// import Home from "./Components/01 pages/Home";
 import Work from "./Components/01 pages/Work/Work";
 import About from "./Components/01 pages/About";
 import CV from "./Components/01 pages/CV";
@@ -24,8 +24,8 @@ const App = () => {
             <Navbar/>
             
             <Routes>
-                <Route exact path="/" Component={Home} />
-                <Route path="/work" Component={Work} />
+                
+                <Route exact path="/" Component={Work} />
                 <Route path="/about" Component={About} />
                 <Route path="/cv" Component={CV} />
                 <Route path="/media" Component={Media} />
