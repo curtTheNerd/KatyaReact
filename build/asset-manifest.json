@@ -1,17 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5fb626b.css",
-    "main.js": "/static/js/main.d6a05982.js",
-    "static/media/12 Ediks_friends_lrr.jpeg": "/static/media/12 Ediks_friends_lrr.e2f32add79ef271c1751.jpeg",
-    "static/media/11 3_Going_to_swim_1961_600_400mm_oil_on_canvas.jpeg": "/static/media/11 3_Going_to_swim_1961_600_400mm_oil_on_canvas.8c9d75cb7161d76d4879.jpeg",
-    "static/media/07 Katya_Granova_Zinoviys_kids130x195cm_2020.jpg": "/static/media/07 Katya_Granova_Zinoviys_kids130x195cm_2020.604e88c788cdd19910dd.jpg",
-    "static/media/05 2_surgery_in_the_unknown_patient_oil_on_canvas_19_AUe4SKG.jpg": "/static/media/05 2_surgery_in_the_unknown_patient_oil_on_canvas_19_AUe4SKG.7ecd327e85ef9591f9d3.jpg",
+    "main.css": "/static/css/main.0035ec93.css",
+    "main.js": "/static/js/main.abcf3985.js",
     "static/media/Woman, her daughters and a doll, 145X210CM, oil on canvas, 2021.jpg": "/static/media/Woman, her daughters and a doll, 145X210CM, oil on canvas, 2021.4af43bd33a472ba441fd.jpg",
     "static/media/EdiksFriendslrElectricLightOilOnCanvas.jpg": "/static/media/EdiksFriendslrElectricLightOilOnCanvas.7ac5a887b795148acd9b.jpg",
     "static/media/Komissarjevskaya playing Nora, lr 200x145cm, oil on canvas .jpg": "/static/media/Komissarjevskaya playing Nora, lr 200x145cm, oil on canvas .16d9240f043744189c87.jpg",
-    "static/media/03 pediatric_surgery_1.jpeg": "/static/media/03 pediatric_surgery_1.f0d4b6c137e8cef6c628.jpeg",
     "static/media/Komissarjevskaya theatre actors posing in costumes_150x200cm_oil on canvas_2020 — копия 2.jpg": "/static/media/Komissarjevskaya theatre actors posing in costumes_150x200cm_oil on canvas_2020 — копия 2.7185fec7475797828aed.jpg",
-    "static/media/17 7_father_as_a_baby_1962_Oil_on_canvas_1300_850mm.jpg": "/static/media/17 7_father_as_a_baby_1962_Oil_on_canvas_1300_850mm.fc417f00e42e0661412b.jpg",
     "static/media/two kids in the harbour 2024 120_180cm.jpg": "/static/media/two kids in the harbour 2024 120_180cm.354b68c439bb7a1560fa.jpg",
     "static/media/A song of unrequited love for Britain, exhibition interior 1.jpg": "/static/media/A song of unrequited love for Britain, exhibition interior 1.bf1f680c52c350a72237.jpg",
     "static/media/DSC_0192.jpg": "/static/media/DSC_0192.357702d0b2bce7c6bc3d.jpg",
@@ -43,19 +37,15 @@
     "static/media/ScullScene,180x160,2021.jpg": "/static/media/ScullScene,180x160,2021.7fd164741c7409a9df5a.jpg",
     "static/media/about3.jpg": "/static/media/about3.39cbf1214b46c7977541.jpg",
     "static/media/MendeleevAndHisColleaguesBeforeTheExhibition210x170,OilOnCanvas,2020 .jpg": "/static/media/MendeleevAndHisColleaguesBeforeTheExhibition210x170,OilOnCanvas,2020 .b6bd2076902b3743be5a.jpg",
-    "static/media/06 Mums_picnic_51x60cm.jpg": "/static/media/06 Mums_picnic_51x60cm.25f1aaaba2a218a96f45.jpg",
     "static/media/Hamlet (Act 1. Scene 5) 2interior.jpg": "/static/media/Hamlet (Act 1. Scene 5) 2interior.86958895add6d4991458.jpg",
     "static/media/Hamlet (Act 1. Scene 5) 1 interior.jpeg": "/static/media/Hamlet (Act 1. Scene 5) 1 interior.365c4ad70f86eef5f2b3.jpeg",
     "static/media/aboutPic.jpg": "/static/media/aboutPic.6abf6d1039a76f24bab5.jpg",
-    "static/media/09 Red_square_1991_148x98.jpg": "/static/media/09 Red_square_1991_148x98.48df52ad5c291899caa0.jpg",
-    "static/media/08 Maria_and_her_sisters_195x130cm.jpg": "/static/media/08 Maria_and_her_sisters_195x130cm.32b4127364cc44cc924c.jpg",
-    "static/media/10 Mum_and_Nietzsche_on_the_party_30x40.jpg": "/static/media/10 Mum_and_Nietzsche_on_the_party_30x40.450b055658e7726204cd.jpg",
     "index.html": "/index.html",
-    "main.f5fb626b.css.map": "/static/css/main.f5fb626b.css.map",
-    "main.d6a05982.js.map": "/static/js/main.d6a05982.js.map"
+    "main.0035ec93.css.map": "/static/css/main.0035ec93.css.map",
+    "main.abcf3985.js.map": "/static/js/main.abcf3985.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5fb626b.css",
-    "static/js/main.d6a05982.js"
+    "static/css/main.0035ec93.css",
+    "static/js/main.abcf3985.js"
   ]
 }

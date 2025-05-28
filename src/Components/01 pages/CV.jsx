@@ -52,10 +52,10 @@ const CV = () => {
                 2021 <strong>Act 1. Scene 5. Room in the Castle</strong> (with Anna Tagantzeva-Kobzeva), Smirnov Sorokin Fund, Moscow, RU<br></br>
                 2020 <strong>Atelier by the Police bridge</strong>, Duckley Project Gallery, Budva, ME<br></br>
                 2018 <strong>Voyariste’s attic</strong>, FFTN Gallery, St Petersburg, RU<br></br>
-                {/*2016 <strong>Oilcloth</strong>, Gallery Art-League, Pushkinskaya 10 Museum, St Petersburg, RU<br></br>
+                2016 <strong>Oilcloth</strong>, Gallery Art-League, Pushkinskaya 10 Museum, St Petersburg, RU<br></br>
                 2016 <strong>Communal paradise lost</strong>, Gallery Beo-Project', Belgrade, RS<br></br>
                 2016 <strong>Advantages of spiders</strong> (with Pyotr Shvetsov) Gallery Luda, St Petersburg, RU<br></br>
-                2016 <strong>Something is getting out</strong>, Gallery «Intimnoe mesto», St Petersburg, RU<br></br>*/}<br></br></p>
+                2016 <strong>Something is getting out</strong>, Gallery «Intimnoe mesto», St Petersburg, RU<br></br><br></br></p>
 
             <p><strong>Group Exhibitions</strong><br></br><br></br>
                 2025 <strong>Winter Salon</strong>, Pushkin House, London, UK<br></br>
@@ -91,12 +91,12 @@ const CV = () => {
                 2019 <strong>WiP show</strong>, Royal College of Arts, Sackler building, London, UK<br></br>
                 2019 <strong>Impostesse - The ghost of gender</strong>, Pig Snout Gallery, St. Petersburg, RU<br></br>
                 2018 <strong>Beach</strong>, Dukley art centre, ME<br></br>
-                {/*2017 <strong>Paradise papiers</strong>, Galerie le garage, Lorgues, FR<br></br>
+                2017 <strong>Paradise papiers</strong>, Galerie le garage, Lorgues, FR<br></br>
                 2016 <strong>It can exist</strong>, Rabochii i Kolchoznitsa exhibition centre, MVO Manezj, Moscow, RU<br></br>
                 2016 <strong>Then it was unknown to us</strong>, Moscow International biennale for young art, RU<br></br>
                 2016 <strong>II</strong>, Omelchenko Gallery, Moscow, RU<br></br>
                 2015 <strong>Les Closharts Celestes</strong>, Art Space Albatros, Paris, Montreuil, FR<br></br>
-                2015 <strong>7+/-2 - an exploration of memory</strong>, Gallery Le Pavais d’Orsay, Paris, FR<br></br>*/}<br></br></p>
+                2015 <strong>7+/-2 - an exploration of memory</strong>, Gallery Le Pavais d’Orsay, Paris, FR<br></br><br></br></p>
 
             <p><strong> Exhibitions with APXIV Art Collective</strong> (CO-FOUNDER AND MEMBER SINCE 31/12/2016)<br></br><br></br>
                 2021 <strong>Goathotspot</strong>, Assuming the distance: speculatons, fakes and predictions in the age of the coronacene, group exhibition, Garage Museum, Moscow, RU<br></br>
@@ -111,7 +111,7 @@ const CV = () => {
 
             <p><strong>Exhibitions Curated</strong><br></br><br></br>
                 2019 <strong>Nostalgia 2.0 The zombie stage</strong>, RED DOOR Project Space, London, UK<br></br>
-                {/*2017 <strong>Then it was unknown to us</strong>, Moscow International biennale for young art, parallel program, Poligraphicheskii tzeh, Moscow, RU<br></br>*/}</p>
+                2017 <strong>Then it was unknown to us</strong>, Moscow International biennale for young art, parallel program, Poligraphicheskii tzeh, Moscow, RU<br></br></p>
 
             <div className="content_spacer"></div>
 
@@ -124,16 +124,16 @@ const CV = () => {
                 01/12/2021 - 10/02/2022 <strong>Open Studios Winzavod CCA</strong>, Moscow, RU<br></br>
                 16/01/2021 - 16/02/2021 <strong>Smirnov Sorokin Fund</strong>, Moscow, RU<br></br>
                 27/10/2020 - 01/12/2020 <strong>Art Residency Normandy</strong>, FR<br></br>
-                {/*01/06/2017 - 01/07/2017 <strong>Duckley art residence</strong> (curated by Marat Guelman), Kotor, ME<br></br>
+                01/06/2017 - 01/07/2017 <strong>Duckley art residence</strong> (curated by Marat Guelman), Kotor, ME<br></br>
                 01/05/2016 - 11/06/2016 <strong>Beo-Project art residency</strong>, Belgrade, SE<br></br>
-                01/12/2016 - 27/12/2016 <strong>Kunstarhuset Messen residency</strong>, Alvik, NO<br></br>*/}</p>
+                01/12/2016 - 27/12/2016 <strong>Kunstarhuset Messen residency</strong>, Alvik, NO<br></br></p>
 
             <div className="content_spacer"></div>
 
             <p><strong>Related Commercial Projects</strong><br></br><br></br>
                 2024 <strong>Zima magazine</strong>, Artist of the Month Award, Curator and Head of Jury<br></br>
                 2020 <strong>Burberry</strong>, collaboration for Burberry Social Project, providing image for brand's official Instagram<br></br>
-                {/*2016 <strong>Hermitage official magazine</strong>, edition 8 Illustration set “Every day different”<br></br>*/}</p>
+                2016 <strong>Hermitage official magazine</strong>, edition 8 Illustration set “Every day different”<br></br></p>
             <div className="content_spacer"></div>
             
             <div className=''>

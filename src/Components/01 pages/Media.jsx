@@ -8,19 +8,6 @@ const Media = () => {
             <h2 className="title">Media</h2>
             
             <div className='mediaGrid'>
-                {/*
-                <div className='gridItem nr1'>
-                    <p><strong>Artist Talks</strong></p><br />
-                    <p><a href="https://www.youtube.com/watch?v=2y8ptuYujrU&t=48s" className='link' target='blank' rel='noreferrer nofollow'>2025 The Third Room, Leipzig, 44:48</a></p>
-                    <p><a href="https://www.youtube.com/watch?v=p38m6S0I32c&t=64s" className='link' target='blank' rel='noreferrer nofollow'>2024 RUPTURE Xbit, 1:06:16</a></p>
-                    <p><a href="https://www.youtube.com/watch?v=5iOaatkYpA4" className='link' target='blank' rel='noreferrer nofollow'>2024 Short talk, Pilotenkueche residency, 2:32</a></p>
-                    <p><a href="https://www.youtube.com/watch?v=DZkxYvPN9do&t=32s" className='link' target='blank' rel='noreferrer nofollow'>2021 Studio visit, 3:21</a></p>
-                    <p><a href="https://www.youtube.com/watch?v=AY8Ebt3YYlU" className='link' target='blank' rel='noreferrer nofollow'>2021 Artist Talk, 20:03</a></p>
-                    <p><a href="https://www.youtube.com/watch?v=G2Sz40xB3-8&t=18s" className='link' target='blank' rel='noreferrer nofollow'>2021 Фонд Сфера, 24:48</a></p>
-                    <p><a href="https://www.youtube.com/watch?v=F0r-t7uIBTE" className='link' target='blank' rel='noreferrer nofollow'>2019 Artist talk, 20:28</a></p>
-                </div>
-                */}
-
                 <div className="gridItem">
                     <p><strong>Articles</strong></p><br />
                     <p><a href="http://westside.pilotenkueche.net/katya-granova-temporal-echoes/" className="link" target='_blank' rel='noreferrer nofollow'>2024 Pilotenküche</a></p>
