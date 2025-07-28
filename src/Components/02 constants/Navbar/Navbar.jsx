@@ -7,11 +7,6 @@ import { IoCloseCircle } from "react-icons/io5";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 const Navbar = () => {
-
-    const handleClick  = () => {
-        window.scrollTo(0, 0);
-    }
-
     const [active, setActive] = useState('navBar');
 
     const showNav = () => {
@@ -19,6 +14,11 @@ const Navbar = () => {
     }
     const removeNav = () => {
         setActive('navBar');
+    }
+
+    const handleClick  = () => {
+        window.scrollTo(0, 0);
+        removeNav();
     }
 
     return (
@@ -35,7 +35,8 @@ const Navbar = () => {
                         <li className="navItem rightBar"><Link to="/" className='navLink' onClick={handleClick}>Work</Link></li>
                         <li className="navItem rightBar"><Link to="/about" className='navLink' onClick={handleClick}>About</Link></li>
                         <li className="navItem rightBar"><Link to="/cv" className='navLink' onClick={handleClick}>CV</Link></li>
-                        <li className="navItem"><Link to="/media" className='navLink' onClick={handleClick}>Media</Link></li>
+                        <li className="navItem rightBar"><Link to="/media" className='navLink' onClick={handleClick}>Media</Link></li>
+                        <li className="navItem"><Link to="/artistTalks" className='navLink' onClick={handleClick}>Artist Talks</Link></li>
                     </ul>
 
                     <div onClick={removeNav} className="closeNavBar">

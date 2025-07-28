@@ -37,6 +37,7 @@ li {
   
 .container {
     width: 90%;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -81,7 +82,8 @@ li {
     padding-bottom: 2rem;
 }
 
-/*
+/* previous homepage bento grid
+
 .home {
     display: grid;
     grid-template-columns: repeat(10, minmax(0, 10vw));
@@ -317,7 +319,7 @@ li {
             align-items: center;
 
             p {
-                font-size: 1.1rem;
+                font-size: 1.125rem;
                 line-height: 1.5;
                 text-align: center;
                 padding: 2rem;
@@ -462,6 +464,76 @@ li {
         .mediaGrid {
             .gridItem {
                 padding-left: 1rem;
+            }
+        }
+    }
+}
+
+.artistTalks {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .videoGrid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .videoWrapper {
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .ytVideo {
+                position: relative;
+                width: 100%;
+                padding-bottom: 56.25%;
+            }
+
+            .ytVideo iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .videoDescription {
+                font-size: 1.1rem;
+                padding-top: 2rem;
+                padding-bottom: 4.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .artistTalks {
+        .videoGrid {
+            .videoWrapper {
+                width: 80vw;
+                .videoDescription {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .artistTalks {
+        .videoGrid {
+            .videoWrapper {
+                width: 95vw;
+                .videoDescription {
+                    font-size: 1rem;
+                    padding-top: 2rem;
+                    padding-bottom: 3.5rem;
+                }
             }
         }
     }

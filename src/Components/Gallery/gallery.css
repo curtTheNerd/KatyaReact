@@ -17,6 +17,7 @@
   position: relative;
   width: 35vw;
   height: 45vh;
+  border-radius: 2px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -31,7 +32,7 @@
   transform: translate(-50%, -50%);
 }
 .preview_gallery .imageContainer_gallery .overlay_gallery {
-  display: none;
+  display: flex;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -41,6 +42,8 @@
   width: 100%;
   height: 25%;
   background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .preview_gallery .imageContainer_gallery .overlay_gallery p {
   font-size: 1.25rem;
@@ -50,7 +53,7 @@
   color: rgb(115, 23, 127);
 }
 .preview_gallery .imageContainer_gallery .show {
-  display: flex;
+  opacity: 1;
 }
 
 .modal {

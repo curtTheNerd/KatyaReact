@@ -32,7 +32,7 @@ const About = () => {
                     <img src={img2} alt="katyaGranova" />
                 </div>
                 <div className='item' >
-                <p>In my practice I alter, abstract, and fictionalize transferred photographic images, either of my family or found in flea markets, 
+                    <p>In my practice I alter, abstract, and fictionalize transferred photographic images, either of my family or found in flea markets, 
                     leaving an imprint of my own bodily movement in them through my gestured marks - and this movement driven by the desire to reclaim the past.<br></br><br></br> 
                     By translating the sign of “oldness” into a painted image I can control the visual dynamics of the photographic image, 
                     start to impose my own subjective position, organize a formal space and think through painting. The large formats of my 
@@ -45,7 +45,7 @@ const About = () => {
             <div className="content_spacer"></div>
 
             <div className='aboutContentFlex'>
-                <div className='item' >
+                <div className='item'>
                     <p>Therefore, my painting is a way to enter into some sensual interaction with the reality from the past, <br></br>captured in images, 
                     driven by my protest against the subjectivity of history.</p>
                 </div>
@@ -55,7 +55,6 @@ const About = () => {
                 <div className='item' >
                     <img src={img3} alt="katyaGranova" />
                 </div>
-
             </div>
         </div>
     )
