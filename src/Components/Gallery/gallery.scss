@@ -9,16 +9,17 @@
     justify-content: center;
     align-items: center;
     padding: 0 0 5rem 0;
-    gap: 5rem;
+    gap: 3rem;
     margin: 0 auto;
 
     .imageContainer_gallery {
         display: block;
         position: relative;
-        width: 35vw;
-        height: 45vh;
+        width: 25vw;
+        min-width: 360px;
+        height: calc(25vw * 0.75);
+        min-height: 270px;
         border-radius: 2px;
-
         overflow: hidden;
         cursor: pointer;
 
@@ -63,137 +64,11 @@
     }
 }
 
-.modal {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-    margin: 0 auto;
-
-    .modalContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        
-        img {
-            max-width: 85vw;
-            max-height: 85vh;
-            margin: 2rem auto 1rem auto;
-            z-index: 101;
-            transition: 0.5s;
-            cursor: zoom-in;
-        }
-
-        .magnified {
-            scale: 2;
-            transition: 0.5s;
-            cursor: grab;
-        }
-
-        .description_modal {
-            padding-left: 1.5rem;
-        }
-
-        .description_modal_magnified {
-            position: absolute;
-            text-shadow: 1px 1px 2px white;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            pointer-events: none;
-            z-index: 102;
-        }
-
-        .close, .prev, .next {
-            border: none;
-            background: none;
-            z-index: 102;
-        }
-
-        .close {
-            position: absolute;
-            top: 2rem;
-            right: 2.5rem;
-            color: rgb(112, 112, 112);
-            font-size: 3.75rem;
-            font-weight: 525;
-            cursor: pointer;
-            transition: 0.5s;
-
-            &:hover {
-                color: rgb(56, 34, 68);
-                transform: scale(1.1);
-                transition: 0.5s;
-            }
-        }
-        
-        .prev, .next {
-            position: absolute;
-            top: 45%;
-            width: auto;
-            padding: 1rem;
-            color: rgb(112, 112, 112);
-            font-weight: bold;
-            font-size: 2.2rem;
-            cursor: pointer;
-            transition: 0.5s;
-            -webkit-user-select: none;
-            user-select: none;
-
-            &:hover {
-                color: rgb(56, 34, 68);
-                transform: scale(1.25);
-                transition: 0.5s;
-            }
-        }
-        
-        .prev {
-            left: 0;
-        }
-        
-        .next {
-            right: 0;
-            padding-right: 1rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1240px) {
-    .preview_gallery { 
-        gap: 3rem;
-
-        .imageContainer_gallery {
-            width: 25vw;
-        } 
-    }
-}
-
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 852px) {
     .preview_gallery {
-        padding: 1rem 0 4rem 0;
-        gap: 3rem;
-    
-        .imageContainer_gallery {
-            width: 40vw;
-        }
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .preview_gallery {
-        padding: 1rem 0 3rem 0;
-        gap: 3rem;
-    
         .imageContainer_gallery {
             width: 75vw;
+            height: 60vh;
         }
     }
 

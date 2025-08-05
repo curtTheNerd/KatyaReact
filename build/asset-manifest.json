@@ -82,8 +82,5 @@
     "main.3c4c0be9.css.map": "/static/css/main.3c4c0be9.css.map",
     "main.30d7dcb3.js.map": "/static/js/main.30d7dcb3.js.map"
   },
-  "entrypoints": [
-    "static/css/main.3c4c0be9.css",
-    "static/js/main.30d7dcb3.js"
-  ]
+  "entrypoints": ["static/css/main.3c4c0be9.css", "static/js/main.30d7dcb3.js"]
 }

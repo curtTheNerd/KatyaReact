@@ -1,85 +1,91 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-  
+
 :root {
-    --SecondaryColor: antiquewhite;
-    --textColor: rgb(54, 53, 61);
+  --SecondaryColor: antiquewhite;
+  --textColor: rgb(54, 53, 61);
 }
-  
-a, h1, h2, h3, h4, h5, p {
-    text-decoration: none;
-    color: var(--textColor);
-    transition: 1s;
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  text-decoration: none;
+  color: var(--textColor);
+  transition: 1s;
 }
-  
+
 h1:hover {
-    color: rgb(186, 39, 255);
-    transition: 3s;
+  color: rgb(186, 39, 255);
+  transition: 3s;
 }
-  
+
 h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    margin: 5rem auto 5rem auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 5rem auto 5rem auto;
 }
-  
+
 li {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
-  
+
 .container {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .title {
-    padding: 5rem auto 3rem auto;
+  padding: 5rem auto 3rem auto;
 }
 
 .content_spacer {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .icon {
-    font-size: 2.2rem;
-    color: var(--textColor);
-    cursor: pointer;
-    transition: 0.5s;
+  font-size: 2.2rem;
+  color: var(--textColor);
+  cursor: pointer;
+  transition: 0.5s;
 }
-  
+
 .icon:hover {
-    color: purple;
-    transition: 0.5s;
+  color: purple;
+  transition: 0.5s;
 }
-  
+
 .flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-  
+
 .link {
-    text-decoration: none;
-    color: var(--textColor);
-    transition: 0.7s;
+  text-decoration: none;
+  color: var(--textColor);
+  transition: 0.7s;
 }
-  
+
 .link:hover {
-    color: rgb(191, 22, 203);
-    transition: 0.7s;
+  color: rgb(191, 22, 203);
+  transition: 0.7s;
 }
-  
+
 .bar {
-    border-top: 1px solid var(--textColor);
-    padding-bottom: 2rem;
+  border-top: 1px solid var(--textColor);
+  padding-bottom: 2rem;
 }
 
 /* previous homepage bento grid
@@ -194,347 +200,344 @@ li {
 */
 
 .preview_work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin: 0 auto;
 
-    .imageContainer_work {
-        display: block;
-        position: relative;
-        width: 35vw;
-        max-width: 640px;     //
-        height: 45vh;
-        max-height: 480px;    //
-        overflow: hidden;
-        cursor: pointer;
+  .imageContainer_work {
+    display: block;
+    position: relative;
+    width: 35vw;
+    max-width: 640px; //
+    height: 45vh;
+    max-height: 480px; //
+    overflow: hidden;
+    cursor: pointer;
 
-        img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);
-        }
-
-        .overlay_work {
-            display: flex;
-            position: absolute;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 25%;
-            background-color: rgba(255, 255, 255, 0.7);
-            cursor: pointer;
-
-            p {
-                font-size: 1.25rem;
-                color: rgb(72, 72, 72);
-
-                &:hover {
-                    color: rgb(91, 18, 100);
-                }
-            }
-        }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
     }
+
+    .overlay_work {
+      display: flex;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 25%;
+      background-color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+
+      p {
+        font-size: 1.25rem;
+        color: rgb(72, 72, 72);
+
+        &:hover {
+          color: rgb(91, 18, 100);
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1140px) {
-    .preview_work {
-        gap: 3rem;
-    }
+  .preview_work {
+    gap: 3rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
-    .preview_work {
-        .imageContainer_work {
-            width: 40vw;
+  .preview_work {
+    .imageContainer_work {
+      width: 40vw;
 
-            .overlay_work {
-                p {
-                    font-size: 1.1rem;
-                }
-            }
+      .overlay_work {
+        p {
+          font-size: 1.1rem;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .preview_work {
-        padding: 0 0 5rem 0;
-    
-        .imageContainer_work {
-            width: 80vw;
-        }
+  .preview_work {
+    padding: 0 0 5rem 0;
+
+    .imageContainer_work {
+      width: 80vw;
     }
+  }
 }
 
-
 .about {
-    .aboutContentGrid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+  .aboutContentGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 
-        .item {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-            p {
-                font-size: 1.1rem;
-                line-height: 1.5;
-                padding: 3rem;
-            }
-            
-            img {
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;  
-                border-radius: 3rem;
-                padding: 2rem;  
-            }
-        }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        padding: 3rem;
+      }
+
+      img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3rem;
+        padding: 2rem;
+      }
     }
+  }
 
-    .aboutContentFlex{
-        display: flex;
-        flex-direction: column;
+  .aboutContentFlex {
+    display: flex;
+    flex-direction: column;
 
-        .item {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-            p {
-                font-size: 1.125rem;
-                line-height: 1.5;
-                text-align: center;
-                padding: 2rem;
-            }
-            
-            img {
-                position: relative;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover; 
-                border-radius: 1rem;   
-            }
-        }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.5;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .about {
-        .aboutContentGrid{
-            gap: 2rem;
+  .about {
+    .aboutContentGrid {
+      gap: 2rem;
 
-            .item {
-                p {
-                    font-size: 1.1rem;
-                    padding: 1rem;
-                }
-                
-                img {  
-                    border-radius: 2rem;
-                    padding: 1rem;  
-                }
-            }
+      .item {
+        p {
+          font-size: 1.1rem;
+          padding: 1rem;
         }
-    
-        .aboutContentFlex{
-            .item {
-                p {
-                    font-size: 1.1rem;
-                    padding: 1rem;
-                }
-            }
+
+        img {
+          border-radius: 2rem;
+          padding: 1rem;
         }
+      }
     }
+
+    .aboutContentFlex {
+      .item {
+        p {
+          font-size: 1.1rem;
+          padding: 1rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .about {
-        .aboutContentGrid{
-            display: flex;
-            flex-direction: column;
-    
-            .item {    
-                p {
-                    font-size: 1.1rem;
-                    text-align: center;
-                    padding: 1rem;
-                }
-                
-                img { 
-                    border-radius: 2rem;
-                    padding: 1rem;  
-                }
-            }
-        }
-    
-        .aboutContentFlex{
-            .item {
-                p {
-                    font-size: 1.1rem;
-                    padding: 1rem;
-                }
+  .about {
+    .aboutContentGrid {
+      display: flex;
+      flex-direction: column;
 
-                img {
-                    width: 100%;
-                }
-            }
+      .item {
+        p {
+          font-size: 1.1rem;
+          text-align: center;
+          padding: 1rem;
         }
+
+        img {
+          border-radius: 2rem;
+          padding: 1rem;
+        }
+      }
     }
+
+    .aboutContentFlex {
+      .item {
+        p {
+          font-size: 1.1rem;
+          padding: 1rem;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
-  
 
 .cv {
-    width: 80%;
-    margin: 0 auto;
-    line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 600px) {
-    .cv {
-        width: 90%;
-    }
+  .cv {
+    width: 90%;
+  }
 }
 
 .media {
-    width: 80%;
-    margin: 0 auto;
-    line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
 
-    .mediaGrid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        gap: 4rem;
+  .mediaGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 4rem;
 
-        .gridItem {
-            padding-left: 20%;
+    .gridItem {
+      padding-left: 20%;
 
-            p {
-                font-size: 1.1rem;
-                line-height: 1.5;
-            }
-        }
+      p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 756px) {
-    .media {
-        .mediaGrid {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
+  .media {
+    .mediaGrid {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
-            .gridItem {
-                padding-left: 4rem;
+      .gridItem {
+        padding-left: 4rem;
 
-                p {
-                    font-size: 1.1rem;
-                    line-height: 1.5;
-                }
-            }
+        p {
+          font-size: 1.1rem;
+          line-height: 1.5;
         }
-    }    
-    
-} 
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 600px) {
-    .media {
-        width: 90%;
-        
-        .mediaGrid {
-            .gridItem {
-                padding-left: 1rem;
-            }
-        }
+  .media {
+    width: 90%;
+
+    .mediaGrid {
+      .gridItem {
+        padding-left: 1rem;
+      }
     }
+  }
 }
 
 .artistTalks {
-    width: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .videoGrid {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 
-    .videoGrid {
+    .videoWrapper {
+      width: 40vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .ytVideo {
+        position: relative;
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        padding-bottom: 56.25%;
+      }
 
-        .videoWrapper {
-            width: 40vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+      .ytVideo iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
 
-            .ytVideo {
-                position: relative;
-                width: 100%;
-                padding-bottom: 56.25%;
-            }
-
-            .ytVideo iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-            }
-
-            .videoDescription {
-                font-size: 1.1rem;
-                padding-top: 2rem;
-                padding-bottom: 4.5rem;
-            }
-        }
+      .videoDescription {
+        font-size: 1.1rem;
+        padding-top: 2rem;
+        padding-bottom: 4.5rem;
+      }
     }
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .artistTalks {
-        .videoGrid {
-            .videoWrapper {
-                width: 80vw;
-                .videoDescription {
-                    font-size: 1.1rem;
-                }
-            }
+  .artistTalks {
+    .videoGrid {
+      .videoWrapper {
+        width: 80vw;
+        .videoDescription {
+          font-size: 1.1rem;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 564px) {
-    .artistTalks {
-        .videoGrid {
-            .videoWrapper {
-                width: 95vw;
-                .videoDescription {
-                    font-size: 1rem;
-                    padding-top: 2rem;
-                    padding-bottom: 3.5rem;
-                }
-            }
+  .artistTalks {
+    .videoGrid {
+      .videoWrapper {
+        width: 95vw;
+        .videoDescription {
+          font-size: 1rem;
+          padding-top: 2rem;
+          padding-bottom: 3.5rem;
         }
+      }
     }
+  }
 }

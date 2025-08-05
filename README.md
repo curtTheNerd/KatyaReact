@@ -1,8 +1,6 @@
-
 Website for Katya
 
 Webapp using react-app for portfolio website of an artist as major practice project.
-
 
 Previous steps:
 
@@ -15,8 +13,6 @@ Previous steps:
 4. Created Gallery (actually my favorite part while writing this code) with popup-like modal view to show images cut down rectangular in the preview and as full size inside modal perspective.
 
 5. CSS cleaned up and setting app ready for early deploying to look for bugs being live.
-
-
 
 Next steps:
 

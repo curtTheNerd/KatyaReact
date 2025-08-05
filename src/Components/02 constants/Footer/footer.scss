@@ -1,30 +1,30 @@
 :root {
-    --SecondaryColor: antiquewhite;
-    --textColor: rgb(54, 53, 61);
+  --SecondaryColor: antiquewhite;
+  --textColor: rgb(54, 53, 61);
 }
 
 .footer {
-    position: relative;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-    
-    .iconDiv{
-        justify-content: center;
-        gap: 1rem;
-        bottom: 0;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 
-        .instagram {
-            font-size: 2.5rem;
-        }
+  .iconDiv {
+    justify-content: center;
+    gap: 1rem;
+    bottom: 0;
 
-        .youtube {
-            font-size: 2.75rem;
-        }
+    .instagram {
+      font-size: 2.5rem;
     }
-    
-    .copyRight {
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
+
+    .youtube {
+      font-size: 2.75rem;
     }
+  }
+
+  .copyRight {
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
 }

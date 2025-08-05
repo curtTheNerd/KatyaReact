@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import './app.css';
+import "./app.css";
 
 import Navbar from "./Components/02 constants/Navbar/Navbar";
 import Footer from "./Components/02 constants/Footer/Footer";
@@ -20,34 +20,40 @@ import Hamlet from "./Components/01 pages/Work/Albums/Hamlet";
 import WhenMyBabushkaJoinedTheReich from "./Components/01 pages/Work/Albums/WhenMyBabushkaJoinedTheReich";
 import Picnics from "./Components/01 pages/Work/Albums/Picnics";
 
-
 const App = () => {
-    return (
-        <Router>
-            <Navbar/>
-            
-            <Routes>
-                
-                <Route exact path="/" Component={Work} />
-                <Route path="/about" Component={About} />
-                <Route path="/cv" Component={CV} />
-                <Route path="/media" Component={Media} />
-                <Route path="/artistTalks" Component={ArtistTalks} />
+  return (
+    <Router>
+      <Navbar />
 
-                <Route path="/aSongOfUnrequitedLoveForBritain" Component={ASongOfUnrequitedLoveForBritain} />
-                <Route path="/atelierByThePoliceBridge" Component={AtelierByThePoliceBridge} />
-                <Route path="/familyArchive" Component={FamilyArchive} />
-                <Route path="/foundPast_19-22" Component={FoundPast_19_22} />
-                <Route path="/foundPast_22-25" Component={FoundPast_22_25} />
-                <Route path="/hamlet" Component={Hamlet} />
-                <Route path="/whenMyBabushkaJoinedTheReich" Component={WhenMyBabushkaJoinedTheReich} />
-                <Route path="/intrudedPicnics" Component={Picnics} />
+      <Routes>
+        <Route exact path="/" Component={Work} />
+        <Route path="/about" Component={About} />
+        <Route path="/cv" Component={CV} />
+        <Route path="/media" Component={Media} />
+        <Route path="/artistTalks" Component={ArtistTalks} />
 
-            </Routes>
+        <Route
+          path="/aSongOfUnrequitedLoveForBritain"
+          Component={ASongOfUnrequitedLoveForBritain}
+        />
+        <Route
+          path="/atelierByThePoliceBridge"
+          Component={AtelierByThePoliceBridge}
+        />
+        <Route path="/familyArchive" Component={FamilyArchive} />
+        <Route path="/foundPast_19-22" Component={FoundPast_19_22} />
+        <Route path="/foundPast_22-25" Component={FoundPast_22_25} />
+        <Route path="/hamlet" Component={Hamlet} />
+        <Route
+          path="/whenMyBabushkaJoinedTheReich"
+          Component={WhenMyBabushkaJoinedTheReich}
+        />
+        <Route path="/intrudedPicnics" Component={Picnics} />
+      </Routes>
 
-            <Footer/>
-        </Router>
-    )
-}
+      <Footer />
+    </Router>
+  );
+};
 
 export default App;

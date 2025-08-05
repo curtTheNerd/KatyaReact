@@ -1,26 +1,39 @@
-import { useGesture } from '@use-gesture/react';
+import { useState } from 'react';
+import './modal.css';
+import TransformImage from './TransformImage';
 
 const Modal = ({ selectedImage, closeModal, prevImage, nextImage }) => {
-    useGesture()
-      return (
-        <div className="modal">
-          <div className="modalContent">
-            <img src={selectedImage.src} alt={selectedImage.id}/>
-            
-            <div className="description_modal">
-              <p>{selectedImage.id}</p>
-              <p>{selectedImage.sub}</p>
-              <p>{selectedImage.method} {selectedImage.size}</p>
-              <p>{selectedImage.method2}</p>
-              <p>{selectedImage.date}</p>
-            </div>
+  
+  // takes as arguments { first: an image-object, second: fuction(closing the modal-view), third: function(show the previous image), forth: function(show the next image)
+  // returns a modal container of that image-object with text-descriptions and adjustable size and navigation functionality through buttons
 
-            <button className="close" onClick={closeModal}>&times;</button>
-            <button className="prev" onClick={prevImage}>&#10094;</button>
-            <button className="next" onClick={nextImage}>&#10095;</button>
-        </div> 
+  const [scaleState, setScaleState] = useState(false);
+  // controlling the state for a zoom funtion that toggles 100%/100% or 100vw/vh of the image  and  the visibility of the buttons
+  const scaleHandler = () => {
+    setScaleState(prev => !prev);
+  };
+
+  return (
+    <div className="modal">
+      <div className="modalContent">
+        <TransformImage selectedImage={selectedImage} scaleState={scaleState} /> 
+            
+        <div className="description_modal">
+          <p>{selectedImage.id}</p>
+          <p>{selectedImage.sub}</p>
+          <p>{selectedImage.method} {selectedImage.size}</p>
+          <p>{selectedImage.method2}</p>
+          <p>{selectedImage.date}</p>
+        </div>
+
+        <button className="close" onClick={closeModal} style={{ display: scaleState ? 'none' : '' }}>&times;</button>
+        <button className="prev" onClick={prevImage} style={{ display: scaleState ? 'none' : '' }}>&#10094;</button>
+        <button className="next" onClick={nextImage} style={{ display: scaleState ? 'none' : '' }}>&#10095;</button>
+
+        <button className="zoom" onClick={scaleHandler} style={{ cursor: scaleState ? 'zoom-out' : 'zoom-in' }}>Zoom</button>
+      </div> 
     </div>
-    )
+  )
 }
 
 export default Modal;
