@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c4c0be9.css",
-    "main.js": "/static/js/main.30d7dcb3.js",
+    "main.css": "/static/css/main.f4dad1d6.css",
+    "main.js": "/static/js/main.7903f826.js",
     "static/media/2 Boiling crayfish, oil on canvas, 200x250 cm, 2019.jpg": "/static/media/2 Boiling crayfish, oil on canvas, 200x250 cm, 2019.638f3e3c0bd04ac52dc8.jpg",
     "static/media/Woman, her daughters and a doll, 145X210CM, oil on canvas, 2021.jpg": "/static/media/Woman, her daughters and a doll, 145X210CM, oil on canvas, 2021.4af43bd33a472ba441fd.jpg",
     "static/media/Grandma Svetlana reading her speech - 2, oil on acrylic print transfer on canvas, 25x35 cm, 2022.jpg": "/static/media/Grandma Svetlana reading her speech - 2, oil on acrylic print transfer on canvas, 25x35 cm, 2022.7a867b20def7b3a5b0e5.jpg",
@@ -79,8 +79,11 @@
     "static/media/Hamlet (Act 1. Scene 5) 1 interior.jpeg": "/static/media/Hamlet (Act 1. Scene 5) 1 interior.365c4ad70f86eef5f2b3.jpeg",
     "static/media/aboutPic.jpg": "/static/media/aboutPic.6abf6d1039a76f24bab5.jpg",
     "index.html": "/index.html",
-    "main.3c4c0be9.css.map": "/static/css/main.3c4c0be9.css.map",
-    "main.30d7dcb3.js.map": "/static/js/main.30d7dcb3.js.map"
+    "main.f4dad1d6.css.map": "/static/css/main.f4dad1d6.css.map",
+    "main.7903f826.js.map": "/static/js/main.7903f826.js.map"
   },
-  "entrypoints": ["static/css/main.3c4c0be9.css", "static/js/main.30d7dcb3.js"]
+  "entrypoints": [
+    "static/css/main.f4dad1d6.css",
+    "static/js/main.7903f826.js"
+  ]
 }

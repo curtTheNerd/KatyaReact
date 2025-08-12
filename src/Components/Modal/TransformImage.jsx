@@ -19,8 +19,8 @@ const TransformImage = ({ selectedImage, scaleState }) => {
           src={selectedImage.src} 
           alt={selectedImage.id}
           style={{
-            maxWidth: scaleState ? '100%' : '100vw',
-            maxHeight: scaleState ? '100%' : '100vh',
+            maxWidth: scaleState ? '150vw' : '100vw',
+            maxHeight: scaleState ? '150vw' : '100vh',
             padding: scaleState ? '0' : '1rem',
             cursor: 'pointer'
           }}/>
