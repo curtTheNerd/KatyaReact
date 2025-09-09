@@ -89,7 +89,7 @@ export const familyArchive = [
     size: "200 x 155cm",
     date: "2019",
     title: "Family Archive 2019 - 2025",
-    link: "/FamilyArchive",
+    link: "familyArchive",
   },
   {
     id: "Boiling Crayfish",
@@ -220,7 +220,7 @@ export const loveForBritain = [
     size: "115 x 150cm",
     date: "2024",
     title: "A song of unrequited Love for Britain",
-    link: "/ASongOfUnrequitedLoveForBritain",
+    link: "aSongOfUnrequitedLoveForBritain",
   },
   {
     id: "Nhs baby vaccination from the 50s",
@@ -281,7 +281,7 @@ export const foundPast_19_22 = [
     size: "260 x 200 cm",
     date: "",
     title: "Found Past 2019 - 2022",
-    link: "/FoundPast_19-22",
+    link: "foundPast-19-22",
   },
   {
     id: "Beach Picnic",
@@ -356,7 +356,7 @@ export const foundPast_22_25 = [
     size: "180 x 210cm",
     date: "2024",
     title: "Found Past 2022 - 2025",
-    link: "/FoundPast_22-25",
+    link: "foundPast-22-25",
   },
   {
     id: "Accidental Shot",
@@ -459,7 +459,7 @@ export const hamlet = [
     size: "230 x 180cm",
     date: "2021",
     title: "Hamlet",
-    link: "/Hamlet",
+    link: "hamlet",
   },
   {
     id: "Gertrude scene",
@@ -499,7 +499,7 @@ export const babushka = [
     size: "180 x 220cm",
     date: "2022",
     title: "When my Babushka joined the Reich",
-    link: "/WhenMyBabushkaJoinedTheReich",
+    link: "whenMyBabushkaJoinedTheReich",
   },
   {
     id: "Grandma Valentina and my Mum on the Beach",
@@ -567,7 +567,7 @@ export const policeBridge = [
     size: "200 x 145cm",
     date: "2020",
     title: "Atelier by the Police Bridge",
-    link: "/AtelierByThePoliceBridge",
+    link: "atelierByThePoliceBridge",
   },
   {
     id: "Komissarjevskaya theatre actors posing in costumes",
@@ -593,7 +593,7 @@ export const picnics = [
     size: "220 x 180cm",
     date: "",
     title: "Intruded Picnics",
-    link: "/IntrudedPicnics",
+    link: "intrudedPicnics",
   },
   {
     id: "Picnic",

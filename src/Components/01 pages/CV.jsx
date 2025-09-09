@@ -3,7 +3,8 @@ import React from "react";
 const CV = () => {
   return (
     <div className="container cv">
-      <h2 className="title">Curriculum Vitae</h2>
+      <h2 className="title">{//Curriculum Vitae
+      }</h2>
 
       <p>
         <strong>Katya (Ekaterina) Granova</strong>

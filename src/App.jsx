@@ -1,9 +1,7 @@
-import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import "./app.css";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"
+import RootLayout from "./RootLayout"
+import "./app.css"
 
-import Navbar from "./Components/02 constants/Navbar/Navbar";
-import Footer from "./Components/02 constants/Footer/Footer";
 // import Home from "./Components/01 pages/Home";
 import Work from "./Components/01 pages/Work/Work";
 import About from "./Components/01 pages/About";
@@ -21,38 +19,33 @@ import WhenMyBabushkaJoinedTheReich from "./Components/01 pages/Work/Albums/When
 import Picnics from "./Components/01 pages/Work/Albums/Picnics";
 
 const App = () => {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />} >
+
+        <Route index element={<Work />} />
+        
+        <Route path="work" element={<Work />} />
+        
+        <Route path='aSongOfUnrequitedLoveForBritain' element={<ASongOfUnrequitedLoveForBritain />} />
+        <Route path="atelierByThePoliceBridge" element={<AtelierByThePoliceBridge />} />
+        <Route path='familyArchive' element={<FamilyArchive />} />
+        <Route path='foundPast-19-22' element={<FoundPast_19_22 />} />
+        <Route path='foundPast-22-25' element={<FoundPast_22_25 />} />          
+        <Route path='hamlet' element={<Hamlet />} />
+        <Route path='whenMyBabushkaJoinedTheReich' element={<WhenMyBabushkaJoinedTheReich />} />
+        <Route path='intrudedPicnics' element={<Picnics />} />
+
+        <Route path='about' element={<About />} />
+        <Route path='CV' element={<CV />} />
+        <Route path='media' element={<Media />} />
+        <Route path='artistTalks' element={<ArtistTalks />} />
+      </Route>   
+    )
+  )
   return (
-    <Router>
-      <Navbar />
-
-      <Routes>
-        <Route exact path="/" Component={Work} />
-        <Route path="/about" Component={About} />
-        <Route path="/cv" Component={CV} />
-        <Route path="/media" Component={Media} />
-        <Route path="/artistTalks" Component={ArtistTalks} />
-
-        <Route
-          path="/aSongOfUnrequitedLoveForBritain"
-          Component={ASongOfUnrequitedLoveForBritain}
-        />
-        <Route
-          path="/atelierByThePoliceBridge"
-          Component={AtelierByThePoliceBridge}
-        />
-        <Route path="/familyArchive" Component={FamilyArchive} />
-        <Route path="/foundPast_19-22" Component={FoundPast_19_22} />
-        <Route path="/foundPast_22-25" Component={FoundPast_22_25} />
-        <Route path="/hamlet" Component={Hamlet} />
-        <Route
-          path="/whenMyBabushkaJoinedTheReich"
-          Component={WhenMyBabushkaJoinedTheReich}
-        />
-        <Route path="/intrudedPicnics" Component={Picnics} />
-      </Routes>
-
-      <Footer />
-    </Router>
+    <RouterProvider router={router} />
   );
 };
 

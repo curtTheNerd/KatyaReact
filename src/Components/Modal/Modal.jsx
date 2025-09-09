@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './modal.css';
 import TransformImage from './TransformImage';
 
@@ -8,14 +8,20 @@ const Modal = ({ selectedImage, closeModal, prevImage, nextImage }) => {
   // returns a modal container of that image-object with text-descriptions and adjustable size and navigation functionality through buttons
 
   const [scaleState, setScaleState] = useState(false);
-  // controlling the state for a zoom funtion that toggles 100%/100% or 100vw/vh of the image  and  the visibility of the buttons
+  const [cursor, setCursor] = useState('grab');
+
+  // controlling the state for a zoom funtion that toggles max-width to 200vw/vh or 100vw/vh of the image  and  the visibility of the buttons
   const scaleHandler = () => {
     setScaleState(prev => !prev);
   };
 
+  const cursorGrabHandler = () => {
+    setCursor(prev => (prev === 'grab' ? 'grabbing' : 'grab'));
+  }
+
   return (
     <div className="modal">
-      <div className="modalContent">
+      <div className="modalContent" style={{cursor: cursor}} onMouseDown={cursorGrabHandler} onMouseUp={cursorGrabHandler}>
         <TransformImage selectedImage={selectedImage} scaleState={scaleState} /> 
             
         <div className="description_modal">

@@ -12,9 +12,9 @@ const TransformImage = ({ selectedImage, scaleState }) => {
       minScale={1}
       maxScale={3}
       doubleClick={{ mode: 'reset' }}
-      panning={{ velocity: false }}
-      style={{ cursor: 'pointer'}}>
-      <TransformComponent style={{ cursor: 'pointer'}}>
+      panning={{ velocity: false }}>
+
+      <TransformComponent>
         <img 
           src={selectedImage.src} 
           alt={selectedImage.id}
@@ -22,7 +22,6 @@ const TransformImage = ({ selectedImage, scaleState }) => {
             maxWidth: scaleState ? '150vw' : '100vw',
             maxHeight: scaleState ? '150vw' : '100vh',
             padding: scaleState ? '0' : '1rem',
-            cursor: 'pointer'
           }}/>
       </TransformComponent>
     </TransformWrapper>

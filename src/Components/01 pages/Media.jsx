@@ -3,7 +3,8 @@ import React from "react";
 const Media = () => {
   return (
     <div className="container media">
-      <h2 className="title">Media</h2>
+      <h2 className="title">{//Media
+      }</h2>
 
       <div className="mediaGrid">
         <div className="gridItem">

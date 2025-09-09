@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./navbar.css";
 
@@ -23,38 +23,38 @@ const Navbar = () => {
   return (
     <div className="container">
       <header className="header">
-        <Link to="/">
+        <NavLink to="/">
           <div className="title">
             <h1>Katya Granova</h1>
           </div>
-        </Link>
+        </NavLink>
 
         <div className={active}>
           <ul className="navList flex">
             <li className="navItem rightBar">
-              <Link to="/" className="navLink" onClick={handleClick}>
+              <NavLink to="/" className={({isActive}) => `navLink ${isActive ? 'navLink-active' : ''}`} onClick={handleClick}>
                 Work
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem rightBar">
-              <Link to="/about" className="navLink" onClick={handleClick}>
+              <NavLink to="/about" className={({isActive}) => `navLink ${isActive ? 'navLink-active' : ''}`} onClick={handleClick}>
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem rightBar">
-              <Link to="/cv" className="navLink" onClick={handleClick}>
+              <NavLink to="/cv" className={({isActive}) => `navLink ${isActive ? 'navLink-active' : ''}`} onClick={handleClick}>
                 CV
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem rightBar">
-              <Link to="/media" className="navLink" onClick={handleClick}>
+              <NavLink to="/media" className={({isActive}) => `navLink ${isActive ? 'navLink-active' : ''}`} onClick={handleClick}>
                 Media
-              </Link>
+              </NavLink>
             </li>
             <li className="navItem">
-              <Link to="/artistTalks" className="navLink" onClick={handleClick}>
+              <NavLink to="/artistTalks" className={({isActive}) => `navLink ${isActive ? 'navLink-active' : ''}`} onClick={handleClick}>
                 Artist Talks
-              </Link>
+              </NavLink>
             </li>
           </ul>
 

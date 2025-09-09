@@ -9,7 +9,8 @@ const ArtistTalks = () => {
 
   return (
     <div className="artistTalks">
-      <h2 className="title">Artist Talks</h2>
+      <h2 className="title">{//Artist Talks
+      }</h2>
 
       <div className="videoGrid">
         {videos.map((video) => (

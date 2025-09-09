@@ -67,4 +67,11 @@
   .modal .modalContent .close, .modal .modalContent .prev, .modal .modalContent .next {
     color: rgba(172, 172, 172, 0.8);
   }
+}
+@media screen and (max-width: 400px) {
+  .preview_gallery .imageContainer_gallery {
+    max-width: 360px;
+    min-width: 0;
+    min-height: 0;
+  }
 }/*# sourceMappingURL=gallery.css.map */
