@@ -3,8 +3,11 @@ import React from "react";
 const CV = () => {
   return (
     <div className="container cv">
-      <h2 className="title">{//Curriculum Vitae
-      }</h2>
+      <h2 className="title">
+        {
+          //Curriculum Vitae
+        }
+      </h2>
 
       <p>
         <strong>Katya (Ekaterina) Granova</strong>
@@ -22,7 +25,7 @@ const CV = () => {
         <br></br>
         <strong>Website: </strong>
         <a href="/index.html" className="link" rel="noreferrer nofollow">
-          www.grart.net
+          www.katya-granova.com
         </a>
         <br></br>
         <strong>Email: </strong>gra.nova.vita@gmail.com<br></br>
@@ -188,8 +191,8 @@ const CV = () => {
       </p>
 
       <p>
-        <strong> Exhibitions with APXIV Art Collective</strong> (CO-FOUNDER AND
-        MEMBER SINCE 31/12/2016)<br></br>
+        <strong> Exhibitions with APXIV Art Collective</strong> (Co-Founder and
+        member since 31/12/2016)<br></br>
         <br></br>
         2021 <strong>Goathotspot</strong>, Assuming the distance: speculatons,
         fakes and predictions in the age of the coronacene, group exhibition,
@@ -242,9 +245,9 @@ const CV = () => {
         <br></br>
         01/11/2024 - 22/11/2024 <strong>Rupturexibit artist-run space</strong>,
         Kingston, UK<br></br>
-        27/08/2024 - 05/10/2024 <strong>Dukley Art Centre residence</strong>,
-        Budva, MNE<br></br>
-        01/04/2024 - 30/07/2024 <strong>Pilotenkueche</strong>, Leipzig, DE
+        {/*27/08/2024 - 05/10/2024 <strong>Dukley Art Centre residence</strong>,
+        Budva, MNE<br></br>*/}
+        01/04/2024 - 28/07/2024 <strong>Pilotenkueche</strong>, Leipzig, DE
         <br></br>
         09/09/2022 - 20/10/2022{" "}
         <strong>Art Works Open, Barbican Arts Group Trust</strong>, London, UK
