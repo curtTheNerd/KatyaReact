@@ -26,7 +26,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className="copyRight flex">Images copyright Katya Granova</p>
+      <p className="copyRight flex">2025 Images copyright Katya Granova</p>
     </div>
   );
 };
